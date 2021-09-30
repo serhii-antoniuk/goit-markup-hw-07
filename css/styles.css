@@ -123,13 +123,13 @@ a {
   align-items: center;
 }
 
-.header-right {
+.header__contacts {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-.header-right:not(:last-child) {
+.header__contacts:not(:last-child) {
   margin-right: 50px;
 }
 

@@ -727,6 +727,12 @@ img {
   transition: opacity 250ms, visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .modal {
   position: absolute;
   width: 528px;
@@ -757,12 +763,6 @@ img {
 .modal__btn-close:focus .modal__btn-open {
   fill: var(--accent-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 }
 
 .modal-form__title {
@@ -840,9 +840,7 @@ img {
   justify-content: center;
 }
 
-.modal-form--checkbox:checked
-+ .modal-form__check-lable
-> .modal-form__icon-check {
+.modal-form--checkbox:checked + .modal-form__check-lable > .modal-form__icon-check {
   background: var(--accent-color);
   border: transparent;
 }

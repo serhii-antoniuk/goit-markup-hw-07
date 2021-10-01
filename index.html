@@ -19,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Шапка страницы -->
@@ -93,9 +94,7 @@
 
       <section class="section section--no-padding-bottom">
         <div class="container">
-          <h2 class="section__title section__title--visually-hidden">
-            Заговолок
-          </h2>
+          <h2 class="section__title visually-hidden">Заговолок</h2>
           <ul class="features">
             <li class="features__item features__item--display">
               <div class="features__box">
@@ -572,7 +571,7 @@
             <button class="footer__button current" type="submit">
               Подписаться
 
-              <svg class="form__icon" width="24" height="24">
+              <svg class="footer__form-icon" width="24" height="24">
                 <use href="./images/sprite.svg#icon-plane"></use>
               </svg>
             </button>
@@ -651,7 +650,11 @@
               type="checkbox"
               id="check"
               name="policy"
-              class="modal-form__visually-hidden modal-form--checkbox"
+              class="
+                modal-form__standart-check
+                visually-hidden
+                modal-form--checkbox
+              "
             />
             <label for="check" class="modal-form__check-lable">
               <span class="modal-form__icon-check">

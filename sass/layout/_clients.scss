@@ -2,18 +2,15 @@
   display: flex;
 }
 
-.clients__item--margin-right {
+.clients__item {
+  width: 170px;
+  height: 92px;
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.clients__item {
-  width: 170px;
-  height: 92px;
-}
-
-.clients__section {
+.clients__link {
   fill: var(--link-color);
   width: 100%;
   height: 100%;
